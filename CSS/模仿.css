@@ -1,0 +1,98 @@
+
+h1{
+    background-color: cornflowerblue;
+    color: midnightblue;
+    text-align: center;
+}
+.text{
+    margin: 0 auto;
+    width:50%;
+    font-size: 16px;
+    color: darkblue;
+    align-items: center;
+}
+body ul{
+    list-style-type: none;
+    text-align: center;}
+
+body li{
+    color: darkorange;
+    font-size: 18px;    
+    text-align: center;
+}
+ .container{
+    width: 50%;
+    margin:0 auto;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+}
+.text-box{
+    width: 600px;
+    text-align: left;
+}
+
+body p{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+body h2{
+    color: darkblue;
+    text-align: center;
+}
+body div{
+    text-align: center;
+}
+body tr{
+    text-align: center;
+}
+body th{
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+body td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+body tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+a :link{
+    color:rgb(227, 17, 49);
+}
+a :visited{
+    color: rgb(16, 18, 184);
+}
+a :hover{
+    color: rgb(154, 225, 12);
+}
+a :active{
+    color: rgb(217, 22, 234);
+}
+image{
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    
+}   
+figcaption{
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+}
+body1{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+body thread{
+    text-align: center;
+}
+
+
+

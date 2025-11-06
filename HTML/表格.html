@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格的基本使用</title>
+</head>
+<body>
+    <table border="1" width="400">
+        <!-- 跨行合并保留最上边的单元格，添加属性rowspan -->
+        <!-- 跨列合并保留最左别的单元格，添加属性colspan -->
+        <!-- border是指像素 -->
+         <!-- th =td -->
+         <h1>成绩统计</h1>
+         <hr />
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>数学</th>
+                <th>语文</th>
+                <th>英语</th>
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>张三</th>
+                <th colspan="2" rowspan="2">89</th>
+                <th>98</th>
+            </tr>
+    
+            <tr>
+                <th>李四</th>
+                <th rowspan="3">88</th>
+            </tr>
+            <tr>
+                <th>王五</th>
+                <th>99</th>
+                <th>88</th>
+                </tr>
+            <tr>
+                <th>赵六</th>
+                <th>84</th>
+                <th>96</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>总结</th>
+                <th>王五数学最高</th>
+                <th>张三语文最高</th>
+                <th>赵六英语最高</th>
+             </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

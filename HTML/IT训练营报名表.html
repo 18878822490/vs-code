@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT训练营报名表</title>
+    <link rel="stylesheet" href="../CSS/模仿.css">
+</head>
+<body1>
+    <h1>IT训练营报名表</h1>
+    <hr>
+    <form action="login" method="post">
+    <table>
+            姓名：<input type="text" name="username"><br>
+            专业：<input type="text" placeholder="请填写专业">
+        <br>
+            班级：<input type="text" placeholder="选填">
+        <br>
+            学号:<input type="text" name="请填写学号">
+        <br>
+            电话：<input type="password" name="password">
+        <br>
+            邮箱：<input type="email" name="email">
+        <br>
+            学习方向：
+            <label>前端
+                <input type="checkbox" name="direction" value="前端">
+            </label>
+            <label>后端
+                <input type="checkbox" name="direction" value="后端">
+            </label>
+        <br>
+            前端学习内容：
+            <select name="front">
+                <option value="html/css">HTML/CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="vue">Vue.js</option>
+            </select>
+        <br>
+            后端学习内容：
+            <select name="back">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+            </select>
+            <br>
+            留言：
+            <textarea cols="30" rows="10" placeholder="对课程内容的建议" required="required" ></textarea>
+        <br>
+            <form action="/submit_date" method="post">
+            <label for="Submit Date">提交日期：</label>
+            <input type="date" id="Submit Date" name="Submit Date" min="2025-11-1" max="2025-11-7">
+            <button type="submit">提交</button>
+            </form>
+        <br>
+         
+            <input type="reset" value="重置报名表">
+            <input type="submit" value="提交报名表">
+        <br>
+
+    </table>
+    </form>
+</body1>
+</html>
+

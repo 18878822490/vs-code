@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单控件</title>
+</head>
+<body>
+    <h1>表单控件</h1>
+    <!-- 与用户交互 -->
+    <form action="login" method="post"></form>
+    <table>
+    <p>请输入姓名：<input type="text" name="username"
+         required="required" /></p> 
+        <!-- required用来直接提交可以用此提交空值 -->
+    <p>学校：<input type="text" value="第五人格中南分校"></p>
+    <p>专业: <input type="text" placeholder="请填写专业"></p>
+    <p>
+        用户名：<input type="text"name="username"><br>
+        密码:<input type="password"name="password">
+    </p>
+    <P>
+        <!-- name属性设置一样可以保证只选一个 -->
+         <!-- label使得文本也能成为点击目标和效果 -->
+        性别：
+        <label>
+            <input type="radio" name="gender" value="male" checked> 男
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> 女
+        </label>
+    </P>
+    <p>
+        <!-- 利用checkbox进行多选，name相同使得信息点击可以同时同类提交到后端 -->
+        爱好：
+        <label>
+            <input type="checkbox" name="bobby" value="diwurenge" checked>第五人格
+        </label>
+        <label>
+            <input type="checkbox" name="bobby" value="wangzherongyao">王者荣耀
+        </label>
+        <label>
+            <input type="checkbox" name="bobby" value="hepingjingying">和平精英 
+        </label>
+    </p>
+    <p>
+        支付方式：
+        <select name="pay_option">
+            <option value="alipay">支付宝</option>
+            <option value="wx"微信>微信</option>
+            <option value="bank">银联</option>
+        </select>
+    </p>
+    <p>
+        <!-- 该表格的数字调节只是显示调节会有溢出，因此需要后端的审核验证 cols表示行数，rows表示列数 -->
+        留言：
+        <textarea cols="30" rows="10"></textarea>
+    </p>
+    <P>
+        <!-- 一般用第二种可以进行标签添加 -->
+        <input type="button" value="普通按钮1">
+        <button>普通按钮2</button>
+        <input type="reset" value="重置">
+        <input type="submit" value="提交">
+    </P>
+    <!-- 日期 -->
+        <label for="username">Departure date:</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit" />
+    </P>
+    <p>
+        <!-- 邮箱表单：必须使用邮箱格式 -->
+        <input type="email" name="">
+    </p>
+    <p>
+        <!-- url只能用其对应格式输入否则不能提交 -->
+    </p>
+    <!-- div进行块级构建，span用来进行特殊标记，利于css进行渲染 -->
+    </table>
+</body>
+</html>
